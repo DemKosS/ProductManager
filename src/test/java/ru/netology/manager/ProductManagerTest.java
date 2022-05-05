@@ -43,5 +43,46 @@ public class ProductManagerTest {
         assertArrayEquals(expected, actual);
     }
 
+    @Test
+    public void shouldBySearchAuthor() {
+        String search = "Rob Snider";
+        Product[] actual = manager.searchBy(search);
+        Product[] expected = new Product[]{fifth};
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldBySearchByPhoneName() {
+        String search = "XS";
+        Product[] actual = manager.searchBy(search);
+        Product[] expected = new Product[]{first};
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldBySearchPhoneProducer() {
+        String search = "Samsung";
+        Product[] actual = manager.searchBy(search);
+        Product[] expected = new Product[]{third};
+        assertArrayEquals(expected, actual);
+
+    }
+
+    @Test
+    public void shouldBySearchProducer1() {
+        String search = "Apple";
+        Product[] actual = manager.searchBy(search);
+        Product[] expected = new Product[]{first};
+        assertArrayEquals(expected, actual);
+
+    }
+
+    @Test
+    public void shouldBySearchPhoneTitle() {
+        String search = "I6";
+        Product[] actual = manager.searchBy(search);
+        Product[] expected = new Product[]{second};
+        assertArrayEquals(expected, actual);
+    }
 
 }
