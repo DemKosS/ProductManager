@@ -48,6 +48,7 @@ public class ProductManagerTest {
         String search = "Rob Snider";
         Product[] actual = manager.searchBy(search);
         Product[] expected = new Product[]{fifth};
+
         assertArrayEquals(expected, actual);
     }
 
@@ -56,6 +57,7 @@ public class ProductManagerTest {
         String search = "XS";
         Product[] actual = manager.searchBy(search);
         Product[] expected = new Product[]{first};
+
         assertArrayEquals(expected, actual);
     }
 
@@ -64,6 +66,7 @@ public class ProductManagerTest {
         String search = "Samsung";
         Product[] actual = manager.searchBy(search);
         Product[] expected = new Product[]{third};
+
         assertArrayEquals(expected, actual);
 
     }
@@ -73,6 +76,7 @@ public class ProductManagerTest {
         String search = "Apple";
         Product[] actual = manager.searchBy(search);
         Product[] expected = new Product[]{first};
+
         assertArrayEquals(expected, actual);
 
     }
@@ -82,6 +86,7 @@ public class ProductManagerTest {
         String search = "I6";
         Product[] actual = manager.searchBy(search);
         Product[] expected = new Product[]{second};
+
         assertArrayEquals(expected, actual);
     }
 
