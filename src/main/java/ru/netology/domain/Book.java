@@ -1,14 +1,15 @@
 package ru.netology.domain;
 
 public class Book extends Product {
-    protected String author;
+    private String author;
 
-    public Book(int i, String s) {
+    public Book() {
         super();
 
     }
 
     public Book(String author) {
+
         this.author = author;
     }
 
@@ -22,6 +23,7 @@ public class Book extends Product {
     }
 
     public void setAuthor(String author) {
+
         this.author = author;
     }
 }

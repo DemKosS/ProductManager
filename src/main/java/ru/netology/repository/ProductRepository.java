@@ -15,7 +15,7 @@ public class ProductRepository {
         items = tmp;
     }
 
-    public Product[] getAll() {
+    public Product[] findAll() {
         return items;
     }
 
